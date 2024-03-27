@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="findjobs.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1 class="logo">Hired.</h1>
+    <button class="tempbtn">+</button>
+    <div class="menus">
+      <a href="index.html" onclick="homefunc()"><ion-icon name="home-outline"></ion-icon> Home</a>
+      <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+      <a href="#"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+      <a href="#"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+      <a href="#"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+    </div>
+
+    <div class="profile">
+      <img class="profile-img" src="images1/humanoid.jpg">
+      <div class="profile-name">
+        <h4>Geetansh Goyal</h4>
+        <p>Elon Musk</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div class="main-header">
+      <ion-icon class="menu-bar hamburger" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" placeholder="Search Your Best Job Here...">
+        <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <div class="filter-wrapper">
+      <p>Recommedation</p>
+      <div class="filter">
+        <button class="btn-filter">Data Science</button>
+        <button class="btn-filter">Full Stack Developer</button>
+        <button class="btn-filter">Frontend Developer</button>
+        <button class="btn-filter">System Design</button>
+        <button class="btn-filter">Backend Developer</button>
+        <button class="btn-filter">Show All</button>
+      </div>
+    </div>
+
+    <div class="sort">
+      <p>Sort</p>
+      <div class="sort-list">
+        <select>
+          <option value="0">All</option>
+          <option value="1">Lowest</option>
+          <option value="2">Highest</option>
+        </select>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="card ">
+        <div class="card-left blue-bg">
+          <img src="images1/google.jpg">
+        </div>
+        <div class="card-center">
+          <h3>Google</h3>
+          <p class="card-detail">Data Science,Data Engineer,Full Stack Developer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 mins ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>200 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">Data Engineer</a>
+          </div>
+          <div class="card-salary">
+            <p><b>$350k</b>/Year</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left yellow-bg">
+          <img src="images1/tiktok.webp">
+        </div>
+        <div class="card-center">
+          <h3>Tiktok</h3>
+          <p class="card-detail">Data Analyst, Product Analyst</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Gurgaon</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>10 mins ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Part-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>120 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">Data Analyst</a>
+          </div>
+          <div class="card-salary">
+            <p><b>$150k</b>/Year</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left red-bg">
+          <img src="images1/youtube.webp">
+        </div>
+        <div class="card-center">
+          <h3>Youtube</h3>
+          <p class="card-detail">Full Stack</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Mumbai</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 mins ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>200 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">Full Stack Developer</a>
+          </div>
+          <div class="card-salary">
+            <p><b>$100k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left purple-bg">
+          <img src="images1/apple.webp">
+        </div>
+        <div class="card-center">
+          <h3>Apple</h3>
+          <p class="card-detail">UI/UX Designer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 Day ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>10 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">Designer App</a>
+          </div>
+          <div class="card-salary">
+            <p><b>$350k</b>/Year</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/amazon.webp">
+        </div>
+        <div class="card-center">
+          <h3>Amazon</h3>
+          <p class="card-detail">React </p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>2 Weeks ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>7500 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">FrontEnd </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$80k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/909_adobe.webp">
+        </div>
+        <div class="card-center">
+          <h3>Adobe</h3>
+          <p class="card-detail">Backend Developer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 Month ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>750 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">FrontEnd </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$200k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/Cisco-Emblem-700x394.webp">
+        </div>
+        <div class="card-center">
+          <h3>Cisco</h3>
+          <p class="card-detail">Frontend Developer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 Day ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>75 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">FrontEnd </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$210k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/Color-Microsoft-Logo-500x500.webp">
+        </div>
+        <div class="card-center">
+          <h3>MicroSoft</h3>
+          <p class="card-detail">Full Stack Developer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>1 Month ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>7500 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">FrontEnd </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$90k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/424_asus.webp">
+        </div>
+        <div class="card-center">
+          <h3>Asus</h3>
+          <p class="card-detail">Backend Developer</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>2 hours ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>100 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">Backend </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$150k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+  
+
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images1/infosys2157.webp">
+        </div>
+        <div class="card-center">
+          <h3>Infosys</h3>
+          <p class="card-detail">System Design</p>
+          <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Banglore</p>
+          <div class="card-sub">
+            <p><ion-icon name="today-outline"></ion-icon>3 Weeks ago</p>
+            <p><ion-icon name="hourglass-outline"></ion-icon>Full-Time</p>
+            <p><ion-icon name="people-outline"></ion-icon>750 Applicants</p>
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5>Divison</h5>
+            <a href="#">FrontEnd </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$800k</b>/Month</p>
+          </div>
+        </div>
+        <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="findjobs.js"></script>
+
+</html>
