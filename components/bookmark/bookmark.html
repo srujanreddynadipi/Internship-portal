@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarked Jobs | Hired</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../findjob/findjobs.css">
+  <style>
+    .empty-bookmarks {
+      text-align: center;
+      padding: 50px 20px;
+      color: #666;
+    }
+
+    .empty-bookmarks h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .empty-bookmarks p {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .empty-bookmarks a {
+      display: inline-block;
+      background-color: #5765c3;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .empty-bookmarks a:hover {
+      background-color: #4554b2;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      z-index: 1000;
+      opacity: 0;
+      transition: bottom 0.3s, opacity 0.3s;
+    }
+
+    .toast.show {
+      bottom: 30px;
+      opacity: 1;
+    }
+
+    .page-title {
+      margin: 20px 0;
+      padding: 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .clear-all {
+      margin: 0 20px 20px;
+      padding: 8px 16px;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .clear-all:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1 class="logo">Hired.</h1>
+    <button class="tempbtn">+</button>
+    <div class="menus">
+      <a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+      <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+      <a href="#"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+      <a href="bookmarks.html" class="active"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+      <a href="#"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+    </div>
+
+    <div class="profile">
+      <img class="profile-img" src="images/humanoid.jpeg">
+      <div class="profile-name">
+        <h4>Geetansh Goyal</h4>
+        <p>Elon Musk</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-header">
+      <ion-icon class="menu-bar hamburger" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" id="bookmark-search" placeholder="Search your bookmarked jobs...">
+        <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
+    </div>
+
+    <h2 class="page-title">Bookmarked Jobs</h2>
+    <button id="clear-all" class="clear-all">Clear All Bookmarks</button>
+
+    <div class="wrapper" id="bookmarks-container">
+      <!-- Bookmarked jobs will be displayed here -->
+    </div>
+
+    <div class="empty-bookmarks" id="empty-bookmarks" style="display: none;">
+      <h2>No bookmarked jobs yet</h2>
+      <p>Start exploring and save jobs that interest you</p>
+      <a href="findjobs.html">Find Jobs</a>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="bookmarks.js"></script>
+</body>
+
+</html>

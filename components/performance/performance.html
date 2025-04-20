@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Metrics | Hired</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../findjob/findjobs.css">
+  <link rel="stylesheet" href="performance.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1 class="logo">Hired.</h1>
+    <button class="tempbtn">+</button>
+    <div class="menus">
+      <a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+      <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+      <a href="performance.html" class="active"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+      <a href="bookmarks.html"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+      <a href="#"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+    </div>
+
+    <div class="profile">
+      <img class="profile-img" src="images/humanoid.jpeg">
+      <div class="profile-name">
+        <h4>Geetansh Goyal</h4>
+        <p>Elon Musk</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-header">
+      <ion-icon class="menu-bar hamburger" name="menu-outline"></ion-icon>
+      <h1 class="performance-title">Performance Dashboard</h1>
+      <div class="date-filter">
+        <select id="time-period">
+          <option value="week">Last Week</option>
+          <option value="month" selected>Last Month</option>
+          <option value="quarter">Last Quarter</option>
+          <option value="year">Last Year</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="dashboard-summary">
+      <div class="summary-card">
+        <div class="summary-icon">
+          <ion-icon name="document-text-outline"></ion-icon>
+        </div>
+        <div class="summary-content">
+          <h3>17</h3>
+          <p>Applications</p>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <div class="summary-content">
+          <h3>32</h3>
+          <p>Profile Views</p>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </div>
+        <div class="summary-content">
+          <h3>8</h3>
+          <p>Interviews</p>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon">
+          <ion-icon name="trophy-outline"></ion-icon>
+        </div>
+        <div class="summary-content">
+          <h3>2</h3>
+          <p>Offers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-card">
+        <h3>Application Activity</h3>
+        <canvas id="applicationChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Profile Performance</h3>
+        <canvas id="profileChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-card full-width">
+        <h3>Job Search Activity</h3>
+        <canvas id="activityChart"></canvas>
+      </div>
+    </div>
+
+    <div class="recent-activity">
+      <h2>Recent Activity</h2>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-icon">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <div class="activity-details">
+            <h4>Applied to Data Scientist at Google</h4>
+            <p>2 days ago</p>
+          </div>
+          <div class="activity-status pending">
+            Pending
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+          <div class="activity-details">
+            <h4>Apple viewed your profile</h4>
+            <p>3 days ago</p>
+          </div>
+          <div class="activity-status">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+          <div class="activity-details">
+            <h4>Interview scheduled with Microsoft</h4>
+            <p>5 days ago</p>
+          </div>
+          <div class="activity-status completed">
+            Completed
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+          <div class="activity-details">
+            <h4>Applied to Backend Developer at Amazon</h4>
+            <p>1 week ago</p>
+          </div>
+          <div class="activity-status rejected">
+            Rejected
+          </div>
+        </div>
+        <div class="activity-item">
+          <div class="activity-icon">
+            <ion-icon name="trophy-outline"></ion-icon>
+          </div>
+          <div class="activity-details">
+            <h4>Received offer from TikTok</h4>
+            <p>2 weeks ago</p>
+          </div>
+          <div class="activity-status offer">
+            Offer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-improvement">
+      <h2>Skills Analysis</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Technical Skills</h3>
+            <p>Based on your job applications</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>JavaScript</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>React</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>Data Science</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>Python</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Improvement Areas</h3>
+            <p>Based on job market trends</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>System Design</span>
+              <span>45%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 45%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>Cloud Computing</span>
+              <span>55%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 55%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>Machine Learning</span>
+              <span>40%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span>DevOps</span>
+              <span>30%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 30%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recommendations">
+      <h2>Recommendations</h2>
+      <div class="recommendation-cards">
+        <div class="recommendation-card">
+          <div class="recommendation-icon">
+            <ion-icon name="school-outline"></ion-icon>
+          </div>
+          <h3>Improve Your Skills</h3>
+          <p>Consider developing System Design skills to match the current job market demands.</p>
+          <a href="#" class="recommendation-link">Find Courses <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+        <div class="recommendation-card">
+          <div class="recommendation-icon">
+            <ion-icon name="document-outline"></ion-icon>
+          </div>
+          <h3>Update Your Resume</h3>
+          <p>Add your recent projects to highlight your technical expertise.</p>
+          <a href="#" class="recommendation-link">Update Now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+        <div class="recommendation-card">
+          <div class="recommendation-icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+          <h3>Expand Your Network</h3>
+          <p>Connect with professionals at Google and Microsoft to improve your chances.</p>
+          <a href="#" class="recommendation-link">Find Connections <ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="performance.js"></script>
+</body>
+
+</html>

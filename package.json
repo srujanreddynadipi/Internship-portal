@@ -1,0 +1,28 @@
+{
+  "name": "job-portal",
+  "version": "1.0.0",
+  "description": "A Job Board Portal created using HTML, CSS, and JavaScript. This platform enables job seekers to explore available job opportunities and apply, while allowing recruiters to post job listings.\r ## Features",
+  "main": "bookmarks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geetansh431/Job-Portal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geetansh431/Job-Portal/issues"
+  },
+  "homepage": "https://github.com/Geetansh431/Job-Portal#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  }
+}

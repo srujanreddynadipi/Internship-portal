@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Hired</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../findjob/findjobs.css">
+    <link rel="stylesheet" href="settings.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Hired.</h1>
+        <button class="tempbtn">+</button>
+        <div class="menus">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+            <a href="performance.html"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+            <a href="bookmark.html"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+            <a href="message.html"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+            <a href="settings.html" class="active"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+
+        <div class="profile">
+            <img class="profile-img" src="../../images/humanoid.jpeg">
+            <div class="profile-photo">
+               
+            </div>
+            <div class="profile-name">
+                <h4>Geetansh Goyal</h4>
+                <p>Job Seeker</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="settings-container">
+            <h1>Settings</h1>
+            
+            <div class="settings-section">
+                <h2>Profile Settings</h2>
+                <div class="profile-settings">
+                    <div class="profile-photo">
+                        <img src="../../images/humanoid.jpeg" alt="Profile Photo">
+                        <button class="change-photo">Change Photo</button>
+                    </div>
+                    <div class="profile-info">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" value="Geetansh Goyal">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="geetansh@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" value="+91 9876543210">
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" value="Mumbai, India">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h2>Job Preferences</h2>
+                <div class="form-group">
+                    <label>Job Type</label>
+                    <select>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Contract</option>
+                        <option>Internship</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Expected Salary Range</label>
+                    <div class="salary-range">
+                        <input type="number" placeholder="Min">
+                        <span>to</span>
+                        <input type="number" placeholder="Max">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Skills</label>
+                    <div class="skills-input">
+                        <div class="skills-tags">
+                            <span>JavaScript<ion-icon name="close-outline"></ion-icon></span>
+                            <span>React<ion-icon name="close-outline"></ion-icon></span>
+                            <span>Node.js<ion-icon name="close-outline"></ion-icon></span>
+                        </div>
+                        <input type="text" placeholder="Add a skill">
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-section">
+                <h2>Notification Settings</h2>
+                <div class="notification-settings">
+                    <div class="notification-option">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <div class="notification-text">
+                            <h4>Email Notifications</h4>
+                            <p>Receive job recommendations and application updates</p>
+                        </div>
+                    </div>
+                    <div class="notification-option">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <div class="notification-text">
+                            <h4>SMS Notifications</h4>
+                            <p>Receive urgent updates via SMS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button class="save-btn">Save Changes</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

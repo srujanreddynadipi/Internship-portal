@@ -21,3 +21,8 @@ We welcome and appreciate contributions from the community to enhance and improv
 ## Thank You! ❤️
 
 Thank you for considering contributing to the Job Board Portal project. Your efforts help make this project better for everyone. If you have any questions or need assistance, feel free to reach out through the issue tracker or discussions. Happy coding! 🤩
+
+
+// the authentication was done and related code is in the server.js login.js and login.html 
+// how its work 
+ it takes the user name from login.html forms into the login.js it stored the data into name email password then this variables were sent to server.js from there it stored into the database mongodb://localhost:27017/jobportal in yor mongodb compass

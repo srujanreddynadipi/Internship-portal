@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | Hired</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../findjob/findjobs.css">
+    
+    <link rel="stylesheet" href="message.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Hired.</h1>
+        <button class="tempbtn">+</button>
+        <div class="menus">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+            <a href="performance.html"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+            <a href="bookmarks.html"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+            <a href="message.html" class="active"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+
+        <div class="profile">
+            <img class="profile-img" src="../../images/humanoid.jpeg">
+        </div>
+        
+        <div class="chat-contact-info">
+            <img src="../../images/companies/google.jpg" alt="Google Logo">
+        </div>
+            <div class="profile-name">
+                <h4>Geetansh Goyal</h4>
+                <p>Job Seeker</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="messages-container">
+            <div class="chat-list">
+                <div class="chat-header">
+                    <h2>Messages</h2>
+                    <div class="search-messages">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Search messages...">
+                    </div>
+                </div>
+                <div class="chat-contacts">
+                    <!-- Chat contacts will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="chat-area">
+                <div class="chat-header">
+                    <div class="chat-contact-info">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="Google Logo">
+                        <div>
+                            <h3>Google Inc.</h3>
+                            <p>Active now</p>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button><ion-icon name="call-outline"></ion-icon></button>
+                        <button><ion-icon name="videocam-outline"></ion-icon></button>
+                        <button><ion-icon name="ellipsis-vertical-outline"></ion-icon></button>
+                    </div>
+                </div>
+                <div class="chat-messages">
+                    <!-- Messages will be populated by JavaScript -->
+                </div>
+                <div class="chat-input">
+                    <button class="attachment-btn">
+                        <ion-icon name="attach-outline"></ion-icon>
+                    </button>
+                    <input type="text" placeholder="Type a message...">
+                    <button class="send-btn">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="message.js"></script>
+</body>
+</html>
