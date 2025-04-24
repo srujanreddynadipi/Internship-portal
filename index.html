@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job</title>
     <!-- Add this before your other stylesheets -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Your existing stylesheets -->
-    <link rel="stylesheet" href="indexstyling.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Hired.</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <!-- <button class="button-59" role="button" onclick="loginfunc()">Sign In</button> -->
-            <a href="components/login/login.html">Sign In</a>
-            <a href="components/login/login.html">Sign Up</a>
-        </nav>
+    <!-- Your existing stylesheets -->
+    <link rel="stylesheet" href="indexstyling.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Hired.</a>
+
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <!-- <button class="button-59" role="button" onclick="loginfunc()">Sign In</button> -->
+        <a href="components/login/login.html">Sign In</a>
+        <a href="components/login/login.html">Sign Up</a>
+      </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
+    <div class="main_ctn">
+      <div>
+        <section class="home">
+          <div class="home-content">
             <h1>Your Place to Find a Perfect Job</h1>
             <h3>Job Search India</h3>
             <p>Finding a job! Make your dream career a reality</p>
+            <!-- Find the btn-box div and update the List a Job link -->
             <div class="btn-box">
-                <a href="components/findjob/findjobs.html" onclick="searchfunc()">Hire Me</a>
-                <a href="#">List a Job</a>
+              <a
+                href="components/findjob/findjobs.html   "
+                onclick="searchfunc()"
+                >Hire Me</a
+              >
+              <a href="listjob.html">List a Job</a>
             </div>
+          </div>
+        </section>
+
+        <div class="home-sci">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
-    </section>
-
-    <div class="home-sci">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-twitter' ></i></a>
-        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+      </div>
+      <div class="image_section">
+        <img src="stud2.jpg" alt="" />
+      </div>
     </div>
-
-   
-</body>
+  </body>
 </html>

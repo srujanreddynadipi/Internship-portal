@@ -23,7 +23,7 @@ signupForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/signup', {
+        const response = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ loginForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/login', {
+        const response = await fetch('http://localhost:3000/api/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -69,9 +69,10 @@ loginForm.addEventListener('submit', async (e) => {
             localStorage.setItem('token', result.token);
             window.location.href = '../findjob/findjobs.html';
         } else {
-            alert(result.message);
+            alert(result.error || 'Login failed');
         }
     } catch (error) {
-        alert('Error during login');
+        console.error('Login error:', error);
+        alert('Error connecting to server. Please try again.');
     }
 });

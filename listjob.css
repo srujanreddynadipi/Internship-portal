@@ -1,0 +1,150 @@
+:root {
+    --primaryColor: #4c50d3;
+    --secondaryColor: #ffce00;
+    --fontColor: #1e1e1e;
+    --whiteColor: #fff;
+    --greyColor: #e7e7e7;
+    --darkGreyColor: #5f5f5f;
+    --softPurple: #e7e8ff;
+}
+
+.main {
+    width: 80%;
+    margin-left: 20%;
+    height: 100vh;
+    background-color: var(--softPurple);
+    padding: 2rem;
+    overflow-y: auto; /* Add scroll to main content */
+}
+
+.job-post-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--whiteColor);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Remove any fixed height constraints */
+}
+
+/* Add smooth scrolling to the page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Customize scrollbar appearance */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--greyColor);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primaryColor);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3a3eb8;
+}
+
+/* Ensure form elements don't overflow */
+.job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Add responsive padding for mobile */
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .job-post-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+}
+
+.job-post-container h1 {
+    color: var(--fontColor);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: var(--fontColor);
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid var(--greyColor);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primaryColor);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #3a3eb8;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .job-post-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

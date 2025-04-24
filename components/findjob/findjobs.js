@@ -773,3 +773,64 @@ $(document).ready(function() {
     return hash;
   }
 });
+
+// Function to fetch jobs from the server
+// Function to fetch jobs from the server
+async function fetchJobs() {
+    try {
+        const response = await fetch('http://localhost:3000/api/jobs');
+        const jobs = await response.json();
+        displayJobs(jobs);
+    } catch (error) {
+        console.error('Error fetching jobs:', error);
+    }
+}
+
+// Function to display jobs
+function displayJobs(jobs) {
+    const jobsContainer = document.querySelector('.job-list');
+    jobsContainer.innerHTML = ''; // Clear existing jobs
+
+    jobs.forEach(job => {
+        const jobCard = `
+            <div class="card">
+                <div class="card-left blue-bg">
+                    <img src="../../images/companies/default-company.jpg">
+                </div>
+                <div class="card-center">
+                    <h3>${job.jobTitle}</h3>
+                    <p>${job.companyName}</p>
+                    <div class="card-sub">
+                        <p>${job.location}</p>
+                        <p>${job.jobType}</p>
+                        <p>${job.experienceLevel}</p>
+                    </div>
+                    <div class="card-sub">
+                        <p><b>Skills:</b> ${job.skills.join(', ')}</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-salary">
+                        <p><b>₹${job.salaryMin} - ₹${job.salaryMax}</b>/Year</p>
+                    </div>
+                    <div class="card-tag">
+                        <h5>Experience Level</h5>
+                        <p>${job.experienceLevel}</p>
+                    </div>
+                    <a href="#" class="apply-btn" onclick="applyForJob('${job._id}')">Apply Now</a>
+                </div>
+                <ion-icon class="bookmark-icon" name="bookmark-outline"></ion-icon>
+            </div>
+        `;
+        jobsContainer.innerHTML += jobCard;
+    });
+}
+
+// Function to handle job application
+function applyForJob(jobId) {
+    // Add your job application logic here
+    alert('Application submitted successfully!');
+}
+
+// Fetch jobs when the page loads
+document.addEventListener('DOMContentLoaded', fetchJobs);

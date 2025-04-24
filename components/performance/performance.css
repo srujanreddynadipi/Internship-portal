@@ -383,3 +383,62 @@
       margin-top: 10px;
     }
   }
+
+  /* Add scrolling behavior to main content */
+  .main {
+    overflow-y: auto;
+    max-height: 100vh;
+    scrollbar-width: thin;
+    scrollbar-color: #4c50d3 #e7e7e7;
+  }
+  
+  /* Customize scrollbar for webkit browsers */
+  .main::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .main::-webkit-scrollbar-track {
+    background: #e7e7e7;
+    border-radius: 4px;
+  }
+  
+  .main::-webkit-scrollbar-thumb {
+    background: #4c50d3;
+    border-radius: 4px;
+  }
+  
+  .main::-webkit-scrollbar-thumb:hover {
+    background: #3a3db8;
+  }
+  
+  /* Ensure sidebar stays fixed */
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .activity-list {
+    max-height: 400px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding-right: 10px;
+  }
+  
+  .activity-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .activity-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .activity-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .activity-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

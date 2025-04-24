@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List a Job | Hired</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="components//findjob/findjobs.css">
+    <link rel="stylesheet" href="listjob.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">Hired.</h1>
+        <button class="tempbtn">+</button>
+        <div class="menus">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="findjobs.html"><ion-icon name="newspaper-outline"></ion-icon> Find Jobs</a>
+            <a href="performance.html"><ion-icon name="stats-chart-outline"></ion-icon> Performance</a>
+            <a href="bookmarks.html"><ion-icon name="bookmarks-outline"></ion-icon> Bookmarks</a>
+            <a href="message.html"><ion-icon name="mail-unread-outline"></ion-icon> Message</a>
+            <a href="settings.html"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="job-post-container">
+            <h1>Post a New Job</h1>
+            <form id="jobPostForm" class="job-form">
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" name="companyName" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Job Title</label>
+                    <input type="text" name="jobTitle" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Job Location</label>
+                    <input type="text" name="location" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Job Type</label>
+                        <select name="jobType" required>
+                            <option value="">Select Job Type</option>
+                            <option value="full-time">Full Time</option>
+                            <option value="part-time">Part Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Experience Level</label>
+                        <select name="experienceLevel" required>
+                            <option value="">Select Experience Level</option>
+                            <option value="entry">Entry Level</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="senior">Senior</option>
+                            <option value="expert">Expert</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Salary Range (Min)</label>
+                        <input type="number" name="salaryMin" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Salary Range (Max)</label>
+                        <input type="number" name="salaryMax" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Required Skills (comma separated)</label>
+                    <input type="text" name="skills" placeholder="e.g. JavaScript, React, Node.js" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Job Description</label>
+                    <textarea name="description" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Requirements</label>
+                    <textarea name="requirements" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Post Job</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="listjob.js"></script>
+</body>
+</html>
