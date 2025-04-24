@@ -12,7 +12,8 @@ const jobs = [
       salary: "₹22 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "We are looking for a Data Scientist to analyze complex data and help drive business decisions. The ideal candidate has strong statistical skills, programming abilities, and experience with machine learning."
+      description: "We are looking for a Data Scientist to analyze complex data and help drive business decisions. The ideal candidate has strong statistical skills, programming abilities, and experience with machine learning.",
+      careerLink: "https://careers.google.com"
   },
   {
       id: 2,
@@ -27,7 +28,8 @@ const jobs = [
       salary: "₹14 lakhs",
       period: "Year",
       bgColor: "yellow-bg",
-      description: "As a Data Analyst at TikTok, you'll work with cross-functional teams to analyze user behavior, create reports, and provide insights that drive product decisions."
+      description: "As a Data Analyst at TikTok, you'll work with cross-functional teams to analyze user behavior, create reports, and provide insights that drive product decisions.",
+      careerLink: "https://careers.tiktok.com"
   },
   {
       id: 3,
@@ -42,7 +44,8 @@ const jobs = [
       salary: "₹18 lakhs",
       period: "Year",
       bgColor: "red-bg",
-      description: "Join our engineering team to build and maintain web applications. You should have experience with both frontend and backend technologies and be comfortable working across the entire stack."
+      description: "Join our engineering team to build and maintain web applications. You should have experience with both frontend and backend technologies and be comfortable working across the entire stack.",
+      careerLink: "https://www.youtube.com/jobs"
   },
   {
       id: 4,
@@ -57,7 +60,8 @@ const jobs = [
       salary: "₹20 lakhs",
       period: "Year",
       bgColor: "purple-bg",
-      description: "Design user interfaces for Apple products that are intuitive, accessible, and align with our design philosophy. You'll work closely with product managers and engineers to create exceptional user experiences."
+      description: "Design user interfaces for Apple products that are intuitive, accessible, and align with our design philosophy. You'll work closely with product managers and engineers to create exceptional user experiences.",
+      careerLink: "https://www.apple.com/careers"
   },
   {
       id: 5,
@@ -72,7 +76,8 @@ const jobs = [
       salary: "₹15 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "We're looking for a React developer to join our team. You'll build and maintain user interfaces for our web applications, working with our design and backend teams to deliver high-quality products."
+      description: "We're looking for a React developer to join our team. You'll build and maintain user interfaces for our web applications, working with our design and backend teams to deliver high-quality products.",
+      careerLink: "https://www.amazon.jobs"
   },
   {
       id: 6,
@@ -87,7 +92,8 @@ const jobs = [
       salary: "₹16 lakhs",
       period: "Year",
       bgColor: "red-bg",
-      description: "As a Backend Developer at Adobe, you'll design and implement server-side logic, maintain databases, and ensure high performance and responsiveness to requests from the front-end."
+      description: "As a Backend Developer at Adobe, you'll design and implement server-side logic, maintain databases, and ensure high performance and responsiveness to requests from the front-end.",
+      careerLink: "https://careers.adobe.com"
   },
   {
       id: 7,
@@ -102,7 +108,8 @@ const jobs = [
       salary: "₹12 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Join our frontend team to create responsive and intuitive user interfaces. You should have experience with modern JavaScript frameworks and a good eye for design."
+      description: "Join our frontend team to create responsive and intuitive user interfaces. You should have experience with modern JavaScript frameworks and a good eye for design.",
+      careerLink: "https://jobs.cisco.com"
   },
   {
       id: 8,
@@ -117,7 +124,8 @@ const jobs = [
       salary: "₹24 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "We're looking for a Full Stack Developer to join our team and help build web applications from the ground up. You should be comfortable working with both frontend and backend technologies."
+      description: "We're looking for a Full Stack Developer to join our team and help build web applications from the ground up. You should be comfortable working with both frontend and backend technologies.",
+      careerLink: "https://careers.microsoft.com"
   },
   {
       id: 9,
@@ -132,7 +140,8 @@ const jobs = [
       salary: "₹10 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Design and implement backend services for our products. You should have experience with scalable systems and be comfortable working with databases and APIs."
+      description: "Design and implement backend services for our products. You should have experience with scalable systems and be comfortable working with databases and APIs.",
+      careerLink: "https://asus.com/careers"
   },
   {
       id: 10,
@@ -147,7 +156,8 @@ const jobs = [
       salary: "₹18 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "As a System Designer, you'll architect solutions for complex business problems, defining system components, interfaces, and data flows. You should have experience with large-scale distributed systems."
+      description: "As a System Designer, you'll architect solutions for complex business problems, defining system components, interfaces, and data flows. You should have experience with large-scale distributed systems.",
+      careerLink: "https://careers.infosys.com"
   },
   {
       id: 11,
@@ -162,7 +172,8 @@ const jobs = [
       salary: "₹19 lakhs",
       period: "Year",
       bgColor: "red-bg",
-      description: "Build and maintain our cloud infrastructure, implement CI/CD pipelines, and ensure high availability and reliability of our services. Experience with AWS, Docker, and Kubernetes is required."
+      description: "Build and maintain our cloud infrastructure, implement CI/CD pipelines, and ensure high availability and reliability of our services. Experience with AWS, Docker, and Kubernetes is required.",
+      careerLink: "https://jobs.netflix.com"
   },
   {
       id: 12,
@@ -177,7 +188,8 @@ const jobs = [
       salary: "₹21 lakhs",
       period: "Year",
       bgColor: "yellow-bg",
-      description: "Lead product development from concept to launch, working with design, engineering, and marketing teams. You should have experience with e-commerce platforms and a track record of successful product launches."
+      description: "Lead product development from concept to launch, working with design, engineering, and marketing teams. You should have experience with e-commerce platforms and a track record of successful product launches.",
+      careerLink: "https://careers.flipkart.com"
   },
   {
       id: 13,
@@ -192,7 +204,8 @@ const jobs = [
       salary: "₹13 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Manage and maintain our database systems, ensuring high performance, availability, and security. Experience with Oracle databases and performance tuning is required."
+      description: "Manage and maintain our database systems, ensuring high performance, availability, and security. Experience with Oracle databases and performance tuning is required.",
+      careerLink: "https://www.oracle.com/careers"
   },
   {
       id: 14,
@@ -207,7 +220,8 @@ const jobs = [
       salary: "₹23 lakhs",
       period: "Year",
       bgColor: "purple-bg",
-      description: "Conduct research in the field of AI and machine learning, develop new algorithms, and publish findings in academic journals. PhD in Computer Science or a related field is preferred."
+      description: "Conduct research in the field of AI and machine learning, develop new algorithms, and publish findings in academic journals. PhD in Computer Science or a related field is preferred.",
+      careerLink: "https://www.ibm.com/careers"
   },
   {
       id: 15,
@@ -222,7 +236,8 @@ const jobs = [
       salary: "₹9 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Configure and customize Salesforce solutions for our clients, gathering requirements, designing solutions, and providing training. Salesforce certification is required."
+      description: "Configure and customize Salesforce solutions for our clients, gathering requirements, designing solutions, and providing training. Salesforce certification is required.",
+      careerLink: "https://careers.salesforce.com"
   },
   {
       id: 16,
@@ -237,7 +252,8 @@ const jobs = [
       salary: "₹17 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Design and implement cloud solutions for our clients, migrating applications to the cloud and optimizing for performance and cost. Experience with multiple cloud platforms is required."
+      description: "Design and implement cloud solutions for our clients, migrating applications to the cloud and optimizing for performance and cost. Experience with multiple cloud platforms is required.",
+      careerLink: "https://www.accenture.com/careers"
   },
   {
       id: 17,
@@ -252,7 +268,8 @@ const jobs = [
       salary: "₹16 lakhs",
       period: "Year",
       bgColor: "red-bg",
-      description: "Develop software for embedded systems in our vehicles, working with hardware engineers to ensure reliable and efficient operation. Experience with real-time operating systems is required."
+      description: "Develop software for embedded systems in our vehicles, working with hardware engineers to ensure reliable and efficient operation. Experience with real-time operating systems is required.",
+      careerLink: "https://www.tesla.com/careers"
   },
   {
       id: 18,
@@ -267,7 +284,8 @@ const jobs = [
       salary: "₹11 lakhs",
       period: "Year",
       bgColor: "red-bg",
-      description: "Conduct user research to inform our product design decisions, using a variety of qualitative and quantitative methods. Experience with usability testing and interview techniques is required."
+      description: "Conduct user research to inform our product design decisions, using a variety of qualitative and quantitative methods. Experience with usability testing and interview techniques is required.",
+      careerLink: "https://careers.airbnb.com"
   },
   {
       id: 19,
@@ -282,7 +300,8 @@ const jobs = [
       salary: "₹15 lakhs",
       period: "Year",
       bgColor: "blue-bg",
-      description: "Build and maintain our data infrastructure, ensuring data quality, reliability, and accessibility. Experience with big data technologies like Hadoop and Spark is required."
+      description: "Build and maintain our data infrastructure, ensuring data quality, reliability, and accessibility. Experience with big data technologies like Hadoop and Spark is required.",
+      careerLink: "https://careers.twitter.com"
   },
   {
       id: 20,
@@ -297,7 +316,8 @@ const jobs = [
       salary: "₹14 lakhs",
       period: "Year",
       bgColor: "yellow-bg",
-      description: "Develop mobile applications for iOS and Android platforms, ensuring high performance, reliability, and a great user experience. Experience with Swift or Kotlin is required."
+      description: "Develop mobile applications for iOS and Android platforms, ensuring high performance, reliability, and a great user experience. Experience with Swift or Kotlin is required.",
+      careerLink: "https://www.uber.com/careers"
   }
 ];
 
@@ -373,7 +393,7 @@ function createJobCards() {
               <h4>Job Description</h4>
               <p>${job.description}</p>
               <div class="action-buttons" style="margin-top: 15px;">
-                  <button class="btn-apply">Apply Now</button>
+                  <a href="${job.careerLink}" target="_blank" class="btn-apply">Apply Now</a>
                   <button class="btn-save">Save Job</button>
               </div>
           </div>
@@ -774,8 +794,7 @@ $(document).ready(function() {
   }
 });
 
-// Function to fetch jobs from the server
-// Function to fetch jobs from the server
+// Replace the static jobs array with a function to fetch jobs from the database
 async function fetchJobs() {
     try {
         const response = await fetch('http://localhost:3000/api/jobs');
@@ -786,7 +805,7 @@ async function fetchJobs() {
     }
 }
 
-// Function to display jobs
+// Update the displayJobs function to handle the database job format
 function displayJobs(jobs) {
     const jobsContainer = document.querySelector('.job-list');
     jobsContainer.innerHTML = ''; // Clear existing jobs
@@ -826,11 +845,38 @@ function displayJobs(jobs) {
     });
 }
 
+// Helper function to format time ago
+function formatTimeAgo(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffTime = Math.abs(now - date);
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    
+    if (diffDays === 0) {
+        const diffHours = Math.floor(diffTime / (1000 * 60 * 60));
+        if (diffHours === 0) {
+            const diffMinutes = Math.floor(diffTime / (1000 * 60));
+            return `${diffMinutes} mins ago`;
+        }
+        return `${diffHours} hours ago`;
+    } else if (diffDays === 1) {
+        return 'Yesterday';
+    } else if (diffDays < 7) {
+        return `${diffDays} days ago`;
+    } else if (diffDays < 30) {
+        const weeks = Math.floor(diffDays / 7);
+        return `${weeks} ${weeks === 1 ? 'week' : 'weeks'} ago`;
+    } else {
+        const months = Math.floor(diffDays / 30);
+        return `${months} ${months === 1 ? 'month' : 'months'} ago`;
+    }
+}
+
+// Call fetchJobs when the page loads
+document.addEventListener('DOMContentLoaded', fetchJobs);
+
 // Function to handle job application
 function applyForJob(jobId) {
     // Add your job application logic here
     alert('Application submitted successfully!');
 }
-
-// Fetch jobs when the page loads
-document.addEventListener('DOMContentLoaded', fetchJobs);
