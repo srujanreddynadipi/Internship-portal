@@ -35,7 +35,7 @@ signupForm.addEventListener('submit', async (e) => {
         
         if (response.ok) {
             localStorage.setItem('token', result.token);
-            window.location.href = '/findjobs.html';
+            window.location.href = '../findjob/findjobs.html';  // Updated path
         } else {
             alert(result.message);
         }
