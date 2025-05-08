@@ -13,7 +13,7 @@ router.post('/signup', async (req, res) => {
         const user = new User({
             username,
             email,
-            password: hashedPassword
+            password: hashedPassword   
         });
         
         await user.save();

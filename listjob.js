@@ -14,7 +14,7 @@ document.getElementById('jobPostForm').addEventListener('submit', async (e) => {
         description: formData.get('description'),   
         requirements: formData.get('requirements')  
     };
-
+    
     try {
         const response = await fetch('http://localhost:3000/api/jobs', {
             method: 'POST',
