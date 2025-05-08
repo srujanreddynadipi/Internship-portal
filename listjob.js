@@ -11,7 +11,7 @@ document.getElementById('jobPostForm').addEventListener('submit', async (e) => {
         salaryMin: formData.get('salaryMin'),
         salaryMax: formData.get('salaryMax'),
         skills: formData.get('skills').split(',').map(skill => skill.trim()),
-        description: formData.get('description'),
+        description: formData.get('description'),   
         requirements: formData.get('requirements')  
     };
 
