@@ -23,4 +23,5 @@ async function initializeDB() {
     }
 }
 
-module.exports = { initializeDB };
+
+module.exports = { initializeDB };   
